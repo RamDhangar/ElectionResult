@@ -26,26 +26,22 @@ aap.addEventListener("click", function(){
    console.log(appResult)
    });
 
-   let largest;
-
-   
-    
 let showResult=document.getElementById("showResult");
 showResult.addEventListener("click",function(){
     document.getElementById("bjpre").innerHTML='BJP Vote is <br><h2>'+bjpResult+'</h2>';
     document.getElementById("congrassre").innerHTML='Congress Vote is <br><h2> '+congressResult+'</h2>';
     document.getElementById("aapre").innerHTML='AAP Vote is<br> <h2>'+appResult+'</h2>';
     let sr= document.getElementById("winResult");
-    if(bjpResult==congressResult==appResult){
+    if(bjpResult==congressResult && bjpResult==appResult){
         sr.innerHTML='No one win Election';
     }
-    else if(bjpResult>= congressResult && bjpResult >= appResult) {
+    else if(bjpResult> congressResult && bjpResult > appResult) {
         sr.innerHTML='BJP win The Election';
       }
-    else if (congressResult >= bjpResult && congressResult >= appResult) {
+    else if (congressResult > bjpResult && congressResult > appResult) {
         sr.innerHTML='Congress win The Election';
       }
-    else {
+    else if(appResult>bjpResult && appResult>congressResult) {
         sr.innerHTML='AAP win The Election';
       }
     
