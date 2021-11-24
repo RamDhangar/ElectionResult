@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,39 @@
     <title>voter page</title>
     <link rel="stylesheet" href="vote.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Vote for your candidate</h1>
-    <div class="vote">
-        <div class="voteuBtn">
-            <h5>This Candidate for <br> BJP</h5>
-            <button id="bjp">Vote here</button>
+        <h1>Vote for your candidate</h1>
+        <div class="vote">
+            <div class="voteuBtn">
+                <h5>This Candidate for <br> BJP</h5>
+                <button class="voteBtn" id="bjp">Vote here</button>
+            </div>
+            <div class="voteuBtn">
+                <h5>This Candidate for <br>Congrass </h5>
+                <button class="voteBtn" id="congrass">Vote here</button>
+            </div>
+            <div class="voteuBtn">
+                <h5>This Candidate for <br>AAP</h5>
+                <button class="voteBtn" id="aap">Vote here</button>
+            </div>
+
         </div>
-        <div class="voteuBtn">
-            <h5>This Candidate for <br>Congrass </h5>
-            <button id="congrass">Vote here</button>
-        </div>
-        <div class="voteuBtn">
-            <h5>This Candidate for <br>AAP</h5>
-            <button id="aap">Vote here</button>
-        </div>
-       
-    </div>
-    <div class="win">
+        <div id="afterVote"></div>
+        <div class="win">
             <button id="showResult">Show result</button>
             <div id="winResult">Click on show result button to check winner</div>
         </div>
 
-    <div id="showvote">
-        
-        <div class="sss" id="bjpre">BJP</div>
-        <div class="sss" id="congrassre">Congress</div>
-        <div class="sss" id="aapre">AAP</div>
+        <div id="showvote">
+
+            <div class="sss" id="bjpre">BJP Result <br> will show<br> here</div>
+            <div class="sss" id="congrassre">Congress Result <br> will show<br> here</div>
+            <div class="sss" id="aapre">AAP Result <br> will show<br> here</div>
+        </div>
     </div>
-    </div>
-<script src="vote.js"></script>
+    <script src="vote.js"></script>
 </body>
+
 </html>

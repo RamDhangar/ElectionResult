@@ -9,10 +9,21 @@ h1{
     background-color: antiquewhite;
     border-radius: 10px;
     width: 450px;
-    height: 400px;
+    height: 410px;
     margin-left: 50%;
     margin-top: 10%;
     transform: translateX(-50%);   
+}
+.voteBtn{
+background-color: rgb(117, 134, 128);
+color: brown;
+padding: 3px;
+border-radius: 7px;
+}
+#afterVote{
+    text-align: center;
+    margin-top: 15px;
+    color: red;
 }
 .voteuBtn{
     background-color: rgb(158, 140, 143);
